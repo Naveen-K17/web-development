@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS  Transform</title>
+    <style>
+        *{
+            margin: 30px;
+        }
+
+        :root{
+            --color:rgb(153, 222, 241);
+            --seccolor:rgb(156, 156, 156);
+        }
+
+        .container{
+            width: 80vw;
+            height: 80vh;
+            border: 2px solid purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            height: 50px;
+            width: 50px;
+            /* background-color: beige; */
+            border: 2px solid black;
+            background-color: var(--seccolor);
+            /* transform: rotate(0.25turn); */
+            /* transform: rotateX(80deg); */
+            /* transform: rotateY(45deg); */
+            /* transform: scale(2); */
+            /* transform: skew(5deg); */
+            /* transform: translate(100%); */
+            /* transform: translateX(20%) skew(5deg); */
+        }
+        .box:hover{
+            background-color: var(--color);
+            cursor: pointer;
+            transform: skew(40deg);
+        }
+        .scale:hover{
+            cursor: pointer;
+            transform: scale(2);
+            background-color: var(--color);
+        }
+        .rotateX{
+            background-color: var(--seccolor);
+        }
+        .scaleX:hover{
+            background-color: var(--color);
+            cursor: pointer;
+            transform: scaleX(2);
+        }
+        .scaleY:hover{
+            background-color: var(--color);
+            cursor: pointer;
+            transform: scaleY(2);
+        }
+        .rotateX:hover{
+             background-color: var(--color);
+            cursor: pointer;
+            transform:rotateX(45deg)
+        }
+        .rotateY:hover{
+             background-color: var(--color);
+            cursor: pointer;
+            transform:rotateY(45deg)
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            skew
+        </div>
+        <div class=" box scale">
+            scale
+        </div>
+        <div class=" box scaleX">
+            scaleX
+        </div>
+        <div class=" box scaleY">
+            scaleY
+        </div>
+        <div class=" box rotateX">
+            rotateX
+        </div>
+        <div class=" box rotateY">
+            rotateY
+        </div>
+    </div>
+</body>
+</html>
