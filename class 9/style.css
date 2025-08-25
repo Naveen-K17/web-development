@@ -1,0 +1,16 @@
+.red{
+    color: rgb(189, 25, 25);
+ }                                                                                      /*class should start with .___*/
+
+.yellow{
+    background-color: aliceblue;
+}
+#firstdiv{
+    background-color: rgb(87, 200, 162);
+}
+#seconddiv{
+    background-color: rgb(181, 181, 52);
+}
+.blue{
+    color: black;
+}

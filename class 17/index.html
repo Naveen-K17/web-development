@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+           /* Element Selector*/
+        div{
+             /* background-color: rgb(223, 26, 26);  */
+        }
+              /* Class selector */
+        .blue{
+            background-color: blue; 
+        }
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+        /* Child Selector */
+        div>p{
+            color: rgb(108, 56, 4);
+            background-color: antiquewhite;
+        }
+        /* Descendant Selector */
+        div p{
+            color: rgb(31, 94, 105);
+            background-color: rgb(67, 38, 1);
+        }
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: blue;
+        }
+        a:active{
+            background-color: rgb(222, 156, 156);
+        }
+        a:hover{
+            background-color: rgb(169, 103, 5);
+        }
+        .name{
+            color: rgb(252, 3, 3);
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div id="green">
+        I am a div
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore atque eos obcaecati veritatis dolores tempora assumenda, modi laboriosam reiciendis dolorem ipsa quae non.</p>
+    </div>
+    <div class="blue">
+        I am another div
+    </div>
+    <div>
+        <article>
+            <p>  I am Third div</p>
+        </article>
+    </div>
+    <a target="_blank" href="https://www.google.com">go to google</a>
+    <a target="_blank" href="https://www.facebook2.com">go to facebook</a>
+    <p class="name">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti illum quo maxime, facere expedita unde est maiores blanditiis veritatis cumque inventore animi eum?</p>
+    <a target="_blank" href="https://instagram.com">go to instagram</a>
+</body>
+</html>
