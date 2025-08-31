@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .img1{
+            /* filter: blur(2px); */
+        }
+        .img2{
+            filter: brightness(150%) contrast(1);
+        }
+        .img3{
+            /* filter:grayscale(100%); */
+            /* filter: drop-shadow(20); */
+            /* filter: invert(1); */
+            filter: opacity(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="logo.jpg" alt="">
+        <img class="img2" src="IMG_20230422_170306.jpg" alt="" width="350px" height="350px">
+        <img class="img3" src="IMG_20231019_111317.jpg" alt="" class="img3" width="350px" height="350px">
+    </div>
+</body>
+</html>
